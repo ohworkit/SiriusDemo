@@ -7,7 +7,6 @@
  */
 
 define("PUBLIC_PATH", __DIR__);
-define("DEBUG", true);
 
 date_default_timezone_set("Asia/ShangHai");
 $hostname = gethostname();
