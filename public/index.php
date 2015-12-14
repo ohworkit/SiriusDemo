@@ -12,10 +12,10 @@ define("DEBUG", true);
 date_default_timezone_set("Asia/ShangHai");
 $hostname = gethostname();
 if(preg_match("/h(\d+)/",$hostname)){ //h1374 h1377
-    //生产环境变量
+    //production environment
     define( "APP_ENVIRONMENT", "production" );
 }else{
-    //开发环境变量
+    //develop environment
     define( "APP_ENVIRONMENT", "develop" );
 }
 
