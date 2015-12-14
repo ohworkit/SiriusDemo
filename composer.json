@@ -6,6 +6,13 @@
         "php": ">=5.5",
         "ohworkit/sirius": "^1.0"
     },
+    "autoload": {
+        "classmap": [
+            "app/helpers",
+            "app/controllers",
+            "app/models"
+        ]
+    },
     "license": "MIT",
     "authors": [
         {
