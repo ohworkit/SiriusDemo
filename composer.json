@@ -20,5 +20,5 @@
             "email": "ohworkit@139.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
