@@ -1,0 +1,26 @@
+server {
+  access_log /var/log/nginx/a.log;
+  error_log /var/log/nginx/e.log;
+  server_name default;
+  root        /var/www/sirius/public;
+  index       index.php;
+
+  client_max_body_size 100M;
+
+  #in vagrant javascript not work! so add this
+  sendfile off;
+
+  location / {
+    try_files $uri $uri/ /index.php?$query_string;
+  }
+
+   location ~ \.php$ {
+       try_files     $uri =404;
+       include       fastcgi_params;
+       fastcgi_index index.php;
+       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+       fastcgi_pass  unix:/var/run/php5-fpm.sock;
+   }
+
+}
+

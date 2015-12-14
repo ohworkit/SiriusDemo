@@ -1,0 +1,17 @@
+{
+    "name": "ohworkit/siriusdemo",
+    "description": "a demo for Sirius Framework",
+    "type": "project",
+    "require": {
+        "php": ">=5.5",
+        "ohworkit/sirius": "~1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James",
+            "email": "ohworkit@139.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
