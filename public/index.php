@@ -20,7 +20,7 @@ if(preg_match("/h(\d+)/",$hostname)){ //h1374 h1377
 
 switch ( APP_ENVIRONMENT ) {
     case "production":
-        error_reporting( DEBUG ? E_ALL : 0 );
+        error_reporting( 0 );
         break;
     default:
         error_reporting( E_ALL );
